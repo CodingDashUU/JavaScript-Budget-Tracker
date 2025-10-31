@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+</head>
+<body>
+  <h1>Budget Tracker</h1>
+
+  <h2>Add Income</h2>
+  <input type="text" id="income-name" placeholder="Income Name">
+  <input type="number" id="income-amount" placeholder="Amount"> <br> <br>
+  <button id="add-income">Add Income</button>
+
+  <h2>Add Expense</h2>
+  <input type="text" id="expense-name" placeholder="Expense Name">
+  <input type="number" id="expense-amount" placeholder="Amount"> <br> <br>
+  <button id="add-expense">Add Expense</button>
+
+  <h2>Add your currency sign</h2>
+  <input type="text" id="sign" placeholder="Eg. $ or USD" value="$">
+
+  <h2>Income</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="income-table"></tbody>
+  </table>
+  <p id="IncomeBox"><strong>Total Income:</strong> <span id="total-income">$ 0</span></p>
+
+  <h2>Expenses</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="expense-table"></tbody>
+  </table>
+  <p id="ExpenseBox"><strong>Total Expenses:</strong> <span id="total-expenses">$ 0</span></p>
+  <div>
+    <h2>Verdict:</h2>
+  
+    <p id="profit"></p>
+  </div>
+
+
+
+
+  <script src="tracker.js"></script>
+</body>
+</html>
